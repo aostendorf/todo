@@ -1,0 +1,14 @@
+<h1>Edit List</h1>
+<%=form_for @list do |f| %>
+<%= f.label :item %>
+<%= f.text_field :item %>
+
+<%= f.label :author %>
+<%= f.text_field :author %>
+
+<%= f.label :completed %>
+<%= f.check_box :completed %>
+
+<%= f.submit %>
+
+<% end %>

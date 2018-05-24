@@ -1,0 +1,14 @@
+<h1>To Do List</h1>
+<%=form_for @list do |f| %>
+<%= f.label :item %>
+<%= f.text_field :item %>
+
+<%= f.label :completed %>
+<%= f.check_box :completed %>
+
+<%= f.label :by %>
+<%= f.text_field :author %>
+
+<%= f.submit %>
+
+<% end %>
